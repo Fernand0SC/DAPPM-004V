@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.dappm_004v.ui.theme.DAPPM004VTheme
+import com.example.dappm_004v.ui.theme.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             DAPPM004VTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    /*Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
-                    )
+                    )*/
+                    HomeScreen()
+
                 }
             }
         }
